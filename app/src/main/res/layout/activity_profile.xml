@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#edf2f4"
+    tools:context=".Profile">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/prof_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/prof_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_below="@id/prof_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/prof_uname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_below="@id/prof_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/prof_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_below="@id/prof_uname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <ImageView
+        android:id="@+id/edit_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/edit"
+        android:layout_toRightOf="@id/prof_img"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp" />
+
+    <ImageView
+        android:id="@+id/del_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/delete"
+        android:layout_toRightOf="@id/edit_img"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:id="@+id/logout_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:backgroundTint="#ce4257"
+        android:layout_below="@id/prof_pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>
